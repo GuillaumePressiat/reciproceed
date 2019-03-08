@@ -1,4 +1,4 @@
-# reciproceed
+# reciproceed : recipe, proceed, reciprocally
 
 ## use R, YAML and bookdown to automate generation of procedure books
 
