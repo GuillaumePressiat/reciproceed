@@ -1,6 +1,6 @@
 # reciproceed
 
-## R package to automate generation of procedure books
+## use R, YAML and bookdown to automate generation of procedure books
 
 **Context: How to do this thing that only your colleague do when he's not here ?** 
 
