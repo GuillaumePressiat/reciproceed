@@ -2,10 +2,9 @@
 
 # **Context: How to do this thing that only your colleague do when he's not here ?** 
 # 
-# This project contain a little framework to list procedures in a structured way that can be shared with all colleagues.
+# This project contains a little framework to list procedures in a structured way that can be shared with all colleagues.
 #    
 # The YAML file contains all procedures and is versionable as a simple text file containing data : procedures or here soup recipes.
-#   
 # This file contains a list of soup recipes in the form of a YAML file. 
 #   
 # This is an example for a more procedure dictionnary oriented documentation.
@@ -17,8 +16,10 @@
 # 
 # Recipes are identified by an id. There is a possibility to fill a dependencies field when other procedures / recipes are needed before.
 # Two dates gives creation date and update date of the procedure involved.
-# Last procedure [p004](p004-an-empty-shell-procedure.html) present an empty shell procedure to show few principles of structuring procedures here.
-# 
+#   
+# Procedure [p004](p004-an-empty-shell-procedure.html) present an empty shell procedure to show few principles of structuring procedures here.
+#   
+# Procedure [p006](p006-to-build-this-book.html) is a minimal procedure showing how to build this book
 
 
 
@@ -27,10 +28,10 @@ Butternut squash soup with chilli & crème fraîche:
     date_creation: 2018-12-19
     date_update: 2019-01-07
     comments: |
-      Come in from the cold to a warming bowlful of autumn
-      Easy
-      Serves 4 
-      Prep: 15 mins ;  Cook: 50 mins 
+      - Come in from the cold to a warming bowlful of autumn
+      - Easy
+      - Serves 4 
+      - Prep: 15 mins ; Cook: 50 mins 
     author: Good Food
     path_procedure: https://www.bbcgoodfood.com/recipes/12808/butternut-squash-soup-with-chilli-and-crme-frache
     path_programs: /home/user/gui/kitchen/
@@ -49,7 +50,7 @@ Butternut squash soup with chilli & crème fraîche:
     context: from Automn leaves to winter end
     frequency_execution: every week
     dependencies: ' '
-    langages: SAS, python
+    languages: SAS, python
     steps: |
         - 1: Heat oven to 200C/180C fan/gas 6.
         - 2: Cut 1 peeled and deseeded butternut squash into large cubes, about 4cm/1½in across, then toss in a large roasting tin with 1 tbsp of the olive oil.
@@ -78,11 +79,11 @@ A fake procedure example:
    context: PostGreSQL database and API
    frequency_execution: weekly
    dependencies: ' '
-   langages: R
+   languages: R
    steps: |
-        - 1: Download DBF files and unzip
-        - 2: Open arborescence_depuis_html2.R, change version parameter et launch the script
-        - 3: Verify it's ok and put take the results to update the database
+        - 1: Download .dbf files and unzip
+        - 2: Open arborescence_depuis_html2.R, change version parameter and launch this script
+        - 3: Verify it's ok and take the results to update the database
 
 #####################################################################################################################
 #####################################################################################################################
@@ -92,10 +93,10 @@ Sweet potato & lentil soup:
     date_creation: 2018-12-19
     date_update: 2019-01-07
     comments: |
-      Satisfying and simple to make, homemade soup is a great supper or take-to-work lunch
-      Easy
-      Serves 6 
-      Prep: 10 mins ;  Cook: 25 mins 
+        - Satisfying and simple to make, homemade soup is a great supper or take-to-work lunch
+        - Easy
+        - Serves 6 
+        - Prep: 10 mins ; Cook: 25 mins 
     author: Good Food
     path_procedure: https://www.bbcgoodfood.com/recipes/13416/sweet-potato-and-lentil-soup
     path_programs: /home/user/gui/kitchen/
@@ -105,14 +106,11 @@ Sweet potato & lentil soup:
         - 2 tsp medium curry powder
         - 3 tbsp olive oil
         - 2 onions, grated
-        - 1 eating apple
-        - Apples, peeled, cored and grated
+        - 1 eating apple, peeled, cored and grated
         - 3 garlic cloves, crushed
         - 20g pack coriander, stalks chopped
-        - thumb-size piece fresh root ginger
-        - Ginger, grated
+        - thumb-size piece fresh root ginger, grated
         - 800g sweet potatoes
-        - Sweet potatoes
         - 1.2l low-sodium vegetable stock
         - 100g red lentils
         - 300ml milk
@@ -120,10 +118,14 @@ Sweet potato & lentil soup:
     context: from Automn leaves to winter end
     frequency_execution: every week
     dependencies: ' '
-    langages: R, Perl
+    languages: R, Perl
     steps: |
-        - 1: Put the curry powder into a large saucepan, then toast over a medium heat for 2 mins. Add the olive oil, stirring as the spice sizzles in the pan. Tip in the onions, apple, garlic, coriander stalks and ginger, season, then gently cook for 5 mins, stirring every so often.
-        - 2: Meanwhile, peel, then grate the sweet potatoes. Tip into the pan with the stock, lentils, milk and seasoning, then simmer, covered, for 20 mins. Blend until smooth using a stick blender. Stir in the lime juice, check the seasoning and serve, topped with roughly-chopped coriander leaves.
+        - 1: Put the curry powder into a large saucepan, then toast over a medium heat for 2 mins. 
+        Add the olive oil, stirring as the spice sizzles in the pan. Tip in the onions, apple, garlic, 
+        coriander stalks and ginger, season, then gently cook for 5 mins, stirring every so often.
+        - 2: Meanwhile, peel, then grate the sweet potatoes. Tip into the pan with the stock, 
+        lentils, milk and seasoning, then simmer, covered, for 20 mins. Blend until smooth using a stick blender. 
+        Stir in the lime juice, check the seasoning and serve, topped with roughly-chopped coriander leaves.
 
 #####################################################################################################################
 #####################################################################################################################
@@ -143,9 +145,76 @@ An empty shell procedure:
    context: In which context is this procedure involved, for what and 
    frequency_execution: weekly
    dependencies: 'list of other p[0-9]{3} procedures we need before to do this one (ie: p002, p003, p112)'
-   langages: R, bash
+   languages: R, bash
    steps: |
         - 1: step one in few words (open the script)
         - 2: step two in few words (run the script)
         - 3: ok, you have the result
         - 4: analyze and communicate this result
+
+
+#####################################################################################################################
+#####################################################################################################################
+
+Lightly spiced carrot soup:
+   id: p005
+   date_creation: 2018-12-19
+   date_update: 2019-01-07
+   comments: |
+        - A satisfying soup which is delicately spiced and works well as a rustic starter
+        - Easy 
+        - Serves 6
+   author: Emma Lewis
+   path_procedure: https://www.bbcgoodfood.com/recipes/12276/lightly-spiced-carrot-soup
+   path_programs: /home/user/gui/kitchen/
+   path_git: ' '
+   path_results: /home/user/gui/dining_room/
+   sources: |
+        - 1 tbsp vegetable oil
+        - 1 onion, finely chopped
+        - 1 garlic clove, chopped
+        - knob of fresh root ginger
+        - Ginger, grated
+        - 1 red chilli
+        - Chillies, deseeded and chopped
+        - 1 tsp mild curry powder, plus extra
+        - 1kg carrots, trimmed and sliced
+        - 2 lemongrass stalks, bashed
+        - 2 strips orange zest
+        - 400g can coconut milk
+        - 700ml vegetable stock
+   context: Carrot is needed.
+   frequency_execution: weekly
+   dependencies: ' '
+   languages: R, bash
+   steps: |
+        - 1: Heat the oil in a large pan with a lid. Tip in the onion, garlic, ginger and chilli, then cook for 3-5 mins until soft. 
+        Stir in the curry powder, followed by the carrots, lemongrass and zest, then cover and cook over a low heat for 10 mins more.
+        - 2: Give the coconut milk can a shake, then pour most of it into the pan along with the vegetable stock. Bring to the boil, 
+        then turn down and simmer for 15 mins until the carrots are really soft. Remove the lemongrass and orange zest, 
+        then use a stick blender or food processor to whizz until smooth. Ladle into bowls and top with a swirl of reserved coconut milk and 
+        an extra sprinkling of curry powder, if you like.
+
+#####################################################################################################################
+#####################################################################################################################
+
+To build this book:
+   id: p006
+   date_creation: 2018-12-19
+   date_update: 2019-01-07
+   comments: How to build this book
+   author: Gui. Pre
+   path_procedure: /it/is/here/you/are/right
+   path_programs: ./_render_book.R
+   path_git: https://github.com/GuillaumePressiat/reciproceed
+   path_results: ./_book, ./docs
+   sources: ./index_procedures.yaml
+   context: Once you've build this, you will be able to build another book with your own procedures if you want
+   frequency_execution: at your discretion !
+   dependencies: ' '
+   languages: R
+   steps: |
+        - 1: Download the git repository and unzip
+        - 2: Open the RStudio proj and then open _render_book.R script, launch it
+        - 3: You can modify the source yaml file to modify the book
+

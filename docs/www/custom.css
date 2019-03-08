@@ -49,8 +49,8 @@ a:visited{
 }
 
 p, ul{
-    /*background:#edf0f2;*/
-    color:#333333;
+    /*background:#edf0f2;
+    color:#666666;*/
     font-family: Segoe UI,Helvetica, Arial,sans-serif;
    /* font-weight:light; */
     margin:0;

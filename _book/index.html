@@ -71,6 +71,8 @@
 <li class="chapter" data-level="2" data-path="p002-a-fake-procedure-example.html"><a href="p002-a-fake-procedure-example.html"><i class="fa fa-check"></i><b>2</b> p002 - A fake procedure example</a></li>
 <li class="chapter" data-level="3" data-path="p003-sweet-potato-lentil-soup.html"><a href="p003-sweet-potato-lentil-soup.html"><i class="fa fa-check"></i><b>3</b> p003 - Sweet potato &amp; lentil soup</a></li>
 <li class="chapter" data-level="4" data-path="p004-an-empty-shell-procedure.html"><a href="p004-an-empty-shell-procedure.html"><i class="fa fa-check"></i><b>4</b> p004 - An empty shell procedure</a></li>
+<li class="chapter" data-level="5" data-path="p005-lightly-spiced-carrot-soup.html"><a href="p005-lightly-spiced-carrot-soup.html"><i class="fa fa-check"></i><b>5</b> p005 - Lightly spiced carrot soup</a></li>
+<li class="chapter" data-level="6" data-path="p006-to-build-this-book.html"><a href="p006-to-build-this-book.html"><i class="fa fa-check"></i><b>6</b> p006 - To build this book</a></li>
 </ul>
 
       </nav>
@@ -96,13 +98,14 @@
 <div id="introduction" class="section level1 unnumbered">
 <h1>Introduction</h1>
 <p><strong>Context: How to do this thing that only your colleague do when he’s not here ?</strong></p>
-<p>This project contain a little framework to list procedures in a structured way that can be shared with all colleagues.</p>
-<p>The YAML file contains all procedures and is versionable as a simple text file containing data : procedures or here soup recipes.</p>
-<p>This file contains a list of soup recipes in the form of a YAML file.</p>
+<p>This project contains a little framework to list procedures in a structured way that can be shared with all colleagues.</p>
+<p>The YAML file contains all procedures and is versionable as a simple text file containing data : procedures or here soup recipes. This file contains a list of soup recipes in the form of a YAML file.</p>
 <p>This is an example for a more procedure dictionnary oriented documentation.</p>
 <p>When there are many procedures or recipes, you can use the search tool of bookdown to find the one you need more easily.</p>
 <p>Adding new procedure is relatively easy thanks to YAML file structure.</p>
-<p>Recipes are identified by an id. There is a possibility to fill a dependencies field when other procedures / recipes are needed before. Two dates gives creation date and update date of the procedure involved. Last procedure <a href="p004-an-empty-shell-procedure.html">p004</a> present an empty shell procedure to show few principles of structuring procedures here.</p>
+<p>Recipes are identified by an id. There is a possibility to fill a dependencies field when other procedures / recipes are needed before. Two dates gives creation date and update date of the procedure involved.</p>
+<p>Procedure <a href="p004-an-empty-shell-procedure.html">p004</a> present an empty shell procedure to show few principles of structuring procedures here.</p>
+<p>Procedure <a href="p006-to-build-this-book.html">p006</a> is a minimal procedure showing how to build this book</p>
 <p>Here are the recipes</p>
 </div>
             </section>
@@ -125,7 +128,7 @@
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": false,
 "twitter": false,
 "google": false,
@@ -149,7 +152,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["liste-procedure-simap.pdf", "liste-procedure-simap.epub"],
+"download": null,
 "toc": {
 "collapse": "subsection"
 }
