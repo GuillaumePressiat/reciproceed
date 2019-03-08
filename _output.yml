@@ -1,0 +1,19 @@
+bookdown::gitbook:
+  css: www/custom.css
+  config:
+    sharing:
+      facebook: no
+      twitter: no
+      google: no
+      linkedin: no
+      weibo: no
+      instapper: no
+      vk: no
+    toc: 
+      before: |
+        <li><a href="./index.html">Procedure book</a></li>
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+bookdown::epub_book: default

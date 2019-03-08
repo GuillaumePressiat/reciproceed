@@ -1,0 +1,58 @@
+---
+title: "Recipe / procedure book for colleagues or buddys"
+subtitle: "Some examples with soup recipes"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+split_by: none
+---
+
+```{r , echo=FALSE, cache=FALSE}
+knitr::opts_chunk$set(message = F, echo = F, warning = F, eval = T)
+```
+
+# Introduction {-}
+
+```{r results = 'asis'}
+library(dplyr)
+readr::read_lines('index_procedures.yaml') %>% 
+  .[grepl('^#.*',.)] %>% 
+  .[!grepl('###|%YAML', .)] %>% 
+  stringr::str_remove_all(., '#') %>% 
+  cat(sep = "\n")
+```
+
+Here are the recipes
+
+```{r}
+library(dplyr)
+u <- yaml::read_yaml('index_procedures.yaml', fileEncoding = 'utf8') %>% 
+  do.call(rbind.data.frame, .) %>% 
+  tibble::rownames_to_column(var = "procedure") %>% 
+  as_tibble() %>% 
+  mutate_all(as.character)
+
+```
+
+
+
+```{r results = 'asis'}
+
+library(stringfix)
+for (el in 1:nrow(u)){
+  cat("  \n\n#" % % u[el,]$id % % '-' % % u[el,]$procedure, "  \n\n")
+  
+  cat(paste0(knitr::kable(u[el, c(2:4, 6, 13, 15)]), collapse = "\n")) #, type="markdown"
+  for (j in 5:ncol(u)){
+    if (j %out% c(6, 13, 15)){
+      if (stringr::str_trim(u[el,j][[1]]) != ""){
+        cat("  \n\n####" % % names(u)[j], "  \n\n")
+        cat(gsub( '\\', '\\\\',u[el,j][[1]], fixed=TRUE))
+      }
+    }
+  }
+}
+
+```
+

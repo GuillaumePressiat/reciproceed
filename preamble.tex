@@ -1,0 +1,22 @@
+\usepackage{booktabs}
+\usepackage{amsthm}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\chaptername}{}
+\renewcommand{\contentsname}{Table of contents}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = CadetBlue,
+    citecolor = CadetBlue,
+    urlcolor  = Blue,
+    linkbordercolor = gray,
+    allbordercolors = CornflowerBlue
+}
+
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother

@@ -1,0 +1,140 @@
+
+a:hover, a:active{
+    outline:0;
+    background-color: #f2f2f2;
+}
+
+a:hover{
+  color:#cd754c;
+  background-color: #f2f2f2;
+}
+
+a:visited{
+  color:#008040;
+  background-color: #f2f2f2;
+}
+
+.left{
+    text-align:left}
+
+.center{
+    text-align:center}
+
+.right{
+    text-align:right}
+
+
+#content pre code {
+    font-family:Monaco,Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Courier New";
+    border: none;
+    background: none;
+    font-size: 100%;
+    white-space: pre;
+}
+
+#nav-top {
+    /*background:#edf0f2;*/
+    color:#333333;
+    font-family: Segoe UI,Helvetica, Arial,sans-serif;
+   /* font-weight:light; */
+    margin:0;
+    min-height:100%;
+/*    overflow-x:hidden;*/
+	font-weight:80;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    font-family:Segoe UI,Helvetica, Arial,sans-serif;
+    font-weight:700;
+}
+
+p, ul{
+    /*background:#edf0f2;*/
+    color:#333333;
+    font-family: Segoe UI,Helvetica, Arial,sans-serif;
+   /* font-weight:light; */
+    margin:0;
+    min-height:100%;
+/*    overflow-x:hidden;*/
+	font-weight:80;
+}
+
+h1{
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  font-size:130%;
+  font-weight:200;
+}
+h2{
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  font-size:160%;
+}
+
+h3{
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  font-size:125%;
+}
+
+h4{
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  font-size:115%;
+}
+
+h5{
+    font-size:110%;
+}
+
+h6{
+    font-size:100%;
+}
+
+h4,h5,h6{
+    font-weight:300;
+}
+
+h1,h2,h3,h4,h5,h6,legend{
+    font-family: Segoe UI,Helvetica, Arial,sans-serif;
+/*    font-weight:700;*/
+    color: #333399;
+}
+
+#main .nav-pills > li > a:hover {
+  color: #FFFFFF !important;
+  background-color: #333399;
+}
+
+
+
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    empty-cells:show;
+    margin:0;
+    border-bottom:1px solid #333399;
+}
+
+td{
+    vertical-align:top}
+
+table td,table th{
+    margin:0;
+    overflow:visible;
+    padding:8px 16px;
+    background-color:white;
+    border:1px solid #e1e4e5;
+	color:#333333;
+    font-family: Segoe UI,Helvetica, Arial,sans-serif;
+    min-height:100%;
+    overflow-x:hidden;
+	font-weight:70;
+}
+
+table thead th{
+    font-weight:bold;
+    border-top:3px solid #333399;
+    border-bottom:1px solid #333399;
+}
