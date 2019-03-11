@@ -2,7 +2,7 @@
 
 ## use R, YAML and bookdown to automate generation of procedure books
 
-**Context: How to do this thing that only your colleague do when he's not here ?** 
+**Context: How to do this thing that only your colleague does when he's not here ?** 
 
 This project contains a little framework to list procedures in a structured way that can be shared with all colleagues.
    
